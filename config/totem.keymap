@@ -12,7 +12,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
@@ -85,10 +84,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q  &kp W  &kp E               &kp R  &kp T                  &kp Y                &kp U  &kp I       &kp O    &kp P
-           &kp A  &kp S  &kp D               &kp F  &kp G                  &kp H                &kp J  &kp K       &kp L    &kp SEMICOLON
-&kp LCTRL  &kp Z  &kp X  &kp C               &kp V  &kp B                  &kp N                &kp M  &kp COMMA   &kp DOT  &kp FSLH       &kp RET
-                         &mt LEFT_SHIFT TAB  &mo 1  &mt LG(SPACE) SPACE    &mt RIGHT_ALT SPACE  &mo 2  &kp ESCAPE
+           &kp Q  &kp W  &kp E       &kp R  &kp T                  &kp Y                &kp U  &kp I      &kp O    &kp P
+           &kp A  &kp S  &kp D       &kp F  &kp G                  &kp H                &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp LCTRL  &kp Z  &kp X  &kp C       &kp V  &kp B                  &kp N                &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp RET
+                         &kp ESCAPE  &mo 1  &mt LG(SPACE) SPACE    &mt RIGHT_ALT SPACE  &mo 2  &kp TAB
             >;
         };
 
@@ -111,10 +110,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp GRAVE  &none     &kp UP_ARROW  &none      &none       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &out OUT_TOG
-       &none      &kp LEFT  &kp DOWN      &kp RIGHT  &none       &none           &kp INS          &kp HOME              &kp PAGE_UP           &kp BACKSPACE
-&none  &none      &none     &none         &none      &kp BSLH    &none           &kp DELETE       &kp END               &kp PAGE_DOWN         &none          &kp DOUBLE_QUOTES
-                            &none         &none      &none       &none           &mo FUNC         &kp CAPSLOCK
+                &kp GRAVE  &none     &kp UP_ARROW  &none      &none       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &out OUT_TOG
+                &none      &kp LEFT  &kp DOWN      &kp RIGHT  &none       &none           &kp INS          &kp HOME              &kp PAGE_UP           &kp BACKSPACE
+&kp LEFT_SHIFT  &none      &none     &none         &none      &kp BSLH    &none           &kp DELETE       &kp END               &kp PAGE_DOWN         &none          &kp DOUBLE_QUOTES
+                                     &kp CAPSLOCK  &none      &none       &none           &mo FUNC         &kp TAB
             >;
         };
 
