@@ -15,9 +15,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
-#define NAV  1
-#define SYM  2
-#define ADJ  3
+#define MOD  1
+#define NUM  2
+#define FUNC  3
 #define TVP1 4
 #define TVP2 5
 
@@ -84,10 +84,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q  &kp W  &kp E               &kp R    &kp T                  &kp Y    &kp U  &kp I       &kp O    &kp P
-           &kp A  &kp S  &kp D               &kp F    &kp G                  &kp H    &kp J  &kp K       &kp K    &kp L
-&kp LCTRL  &kp Z  &kp X  &kp C               &kp V    &kp B                  &kp N    &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RET
-                         &mt LEFT_SHIFT TAB  &mo NAV  &mt LG(SPACE) SPACE    &kp RET  &mo 2  &kp ESCAPE
+           &kp Q  &kp W  &kp E               &kp R    &kp T                  &kp Y    &kp U    &kp I       &kp O    &kp P
+           &kp A  &kp S  &kp D               &kp F    &kp G                  &kp H    &kp J    &kp K       &kp K    &kp L
+&kp LCTRL  &kp Z  &kp X  &kp C               &kp V    &kp B                  &kp N    &kp M    &kp COMMA   &kp DOT  &kp FSLH  &kp RET
+                         &mt LEFT_SHIFT TAB  &mo MOD  &mt LG(SPACE) SPACE    &kp RET  &mo NUM  &kp ESCAPE
             >;
         };
 
@@ -113,7 +113,7 @@
        &kp GRAVE  &none     &kp UP_ARROW  &none      &none       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &out OUT_TOG
        &none      &kp LEFT  &kp DOWN      &kp RIGHT  &none       &none           &kp INS          &kp HOME              &kp PAGE_UP           &kp BACKSPACE
 &none  &none      &none     &none         &none      &kp BSLH    &none           &kp DELETE       &kp END               &kp PAGE_DOWN         &none          &kp DOUBLE_QUOTES
-                            &none         &none      &none       &none           &mo 3            &kp CAPSLOCK
+                            &none         &none      &none       &none           &mo FUNC         &kp CAPSLOCK
             >;
         };
 
@@ -139,7 +139,7 @@
        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7  &kp N8  &kp N9     &kp N0
        &none         &none         &none         &none         &none     &none         &none   &none   &kp MINUS  &kp EQUAL
 &none  &none         &none         &none         &none         &none     &none         &none   &none   &none      &none      &none
-                                   &none         &mo 3         &none     &none         &none   &none
+                                   &none         &mo FUNC      &none     &none         &none   &none
             >;
         };
 
