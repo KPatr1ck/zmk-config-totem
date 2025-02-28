@@ -110,10 +110,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp GRAVE  &none     &kp UP_ARROW  &none      &none       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &out OUT_TOG
-                &none      &kp LEFT  &kp DOWN      &kp RIGHT  &none       &none           &kp INS          &kp HOME              &kp PAGE_UP           &kp BACKSPACE
-&kp LEFT_SHIFT  &none      &none     &none         &none      &kp BSLH    &kp CAPSLOCK    &kp DELETE       &kp END               &kp PAGE_DOWN         &none          &kp SINGLE_QUOTE
-                                     &none         &none      &none       &none           &none            &mo 3
+                &kp GRAVE  &none     &kp UP_ARROW  &none      &none       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &out OUT_TOG
+                &none      &kp LEFT  &kp DOWN      &kp RIGHT  &none       &none             &kp INS            &kp HOME              &kp PAGE_UP           &kp BACKSPACE
+&kp LEFT_SHIFT  &none      &none     &none         &none      &kp BSLH    &kp CAPSLOCK      &kp DELETE         &kp END               &kp PAGE_DOWN         &none          &kp SINGLE_QUOTE
+                                     &none         &none      &none       &none             &none              &mo 3
             >;
         };
 
