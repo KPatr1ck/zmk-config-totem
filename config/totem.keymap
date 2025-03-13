@@ -45,16 +45,40 @@
             bindings = <&kp TAB>;
         };
 
-        combo_enter {
-            bindings = <&kp ENTER>;
+        combo_quote {
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <18 19>;
             timeout-ms = <50>;
         };
 
-        combo_bs {
-            bindings = <&kp BACKSPACE>;
+        combo_left_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <6 7>;
+        };
+
+        combo_right_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <8 9>;
-            timeout-ms = <50>;
+        };
+
+        combo_left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <27 28>;
+        };
+
+        combo_right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <29 30>;
+        };
+
+        combo_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17>;
+        };
+
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <13 12>;
         };
     };
 
