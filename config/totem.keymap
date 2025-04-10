@@ -99,6 +99,150 @@
             require-prior-idle-ms = <0>;
             slow-release;
         };
+
+        combo_ctrl_f {
+            bindings = <&kp LC(F)>;
+            key-positions = <13 36>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_b {
+            bindings = <&kp LC(B)>;
+            key-positions = <36 25>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_c {
+            bindings = <&kp LC(C)>;
+            key-positions = <36 23>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_v {
+            bindings = <&kp LC(V)>;
+            key-positions = <36 24>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <36 21>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_x {
+            bindings = <&kp LC(X)>;
+            key-positions = <36 22>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_a {
+            bindings = <&kp LC(A)>;
+            key-positions = <36 10>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_e {
+            bindings = <&kp LC(E)>;
+            key-positions = <36 2>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_y {
+            bindings = <&kp LC(Y)>;
+            key-positions = <36 5>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_o {
+            bindings = <&kp LC(O)>;
+            key-positions = <36 8>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_i {
+            bindings = <&kp LC(I)>;
+            key-positions = <36 7>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_t {
+            bindings = <&kp LC(T)>;
+            key-positions = <36 4>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_w {
+            bindings = <&kp LC(W)>;
+            key-positions = <36 1>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_u {
+            bindings = <&kp LC(U)>;
+            key-positions = <36 6>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_d {
+            bindings = <&kp LC(D)>;
+            key-positions = <36 12>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_s {
+            bindings = <&kp LC(S)>;
+            key-positions = <36 11>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_slash {
+            bindings = <&kp LC(SLASH)>;
+            key-positions = <36 30>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
+
+        combo_ctrl_p {
+            bindings = <&kp LC(P)>;
+            key-positions = <36 9>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <0>;
+        };
     };
 
     macros {
@@ -115,154 +259,6 @@
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
-        };
-    };
-
-    behaviors {
-        tap_dance_a: tap_dance_a {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_A";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp A>, <&kp LC(A)>;
-        };
-
-        tap_dance_e: tap_dance_e {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_E";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp E>, <&kp LC(E)>;
-        };
-
-        tap_dance_f: tap_dance_f {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_F";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp F>, <&kp LC(F)>;
-        };
-
-        tap_dance_b: tap_dance_b {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_B";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp B>, <&kp LC(B)>;
-        };
-
-        tap_dance_y: tap_dance_y {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_Y";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp Y>, <&kp LC(Y)>;
-        };
-
-        tap_dance_o: tap_dance_o {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_O";
-            #binding-cells = <0>;
-            bindings = <&kp O>, <&kp LC(O)>;
-
-            tapping-term-ms = <150>;
-        };
-
-        tap_dance_i: tap_dance_i {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_I";
-            #binding-cells = <0>;
-            bindings = <&kp I>, <&kp LC(I)>;
-
-            tapping-term-ms = <150>;
-        };
-
-        tap_dance_z: tap_dance_z {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_Z";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp Z>, <&kp LC(Z)>;
-        };
-
-        tap_dance_x: tap_dance_x {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_X";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp X>, <&kp LC(X)>;
-        };
-
-        tap_dance_c: tap_dance_c {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_C";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp C>, <&kp LC(C)>;
-        };
-
-        tap_dance_v: tap_dance_v {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_V";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp V>, <&kp LC(V)>;
-        };
-
-        tap_dance_t: tap_dance_t {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_T";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp T>, <&kp LC(T)>;
-        };
-
-        tap_dance_w: tap_dance_w {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_W";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp W>, <&kp LC(W)>;
-        };
-
-        tap_dance_u: tap_dance_u {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_U";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp U>, <&kp LC(U)>;
-        };
-
-        tap_dance_d: tap_dance_d {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_D";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp D>, <&kp LC(D)>;
-        };
-
-        tap_dance_s: tap_dance_s {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_S";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp S>, <&kp LC(S)>;
-        };
-
-        tap_dance_slash: tap_dance_slash {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_SLASH";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp SLASH>, <&kp LC(SLASH)>;
-        };
-
-        tap_dance_p: tap_dance_p {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_P";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp P>, <&kp LC(P)>;
         };
     };
 
@@ -288,10 +284,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q  &kp W  &kp E  &kp R             &kp T             &kp Y          &kp U      &kp I      &kp O    &kp P
-              &kp A  &kp S  &kp D  &kp F             &kp G             &kp H          &kp J      &kp K      &kp L    &kp SEMICOLON
-&kp LEFT_WIN  &kp Z  &kp X  &kp C  &kp V             &kp B             &kp N          &kp M      &kp COMMA  &kp DOT  &kp SLASH      &kp RET
-                            &mo 1  &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp RIGHT_ALT  &kp SPACE  &mo 2
+              &kp Q  &kp W  &kp E  &kp R           &kp T               &kp Y          &kp U      &kp I      &kp O    &kp P
+              &kp A  &kp S  &kp D  &kp F           &kp G               &kp H          &kp J      &kp K      &kp L    &kp SEMICOLON
+&kp LEFT_WIN  &kp Z  &kp X  &kp C  &kp V           &kp B               &kp N          &kp M      &kp COMMA  &kp DOT  &kp SLASH      &kp RET
+                            &mo 1  &kp LEFT_SHIFT  &kp LEFT_CONTROL    &kp RIGHT_ALT  &kp SPACE  &mo 2
             >;
         };
 
