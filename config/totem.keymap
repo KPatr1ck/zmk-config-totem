@@ -99,6 +99,152 @@
         };
     };
 
+    behaviors {
+        tap_dance_a: tap_dance_a {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_A";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp A>, <&kp LC(A)>;
+        };
+
+        tap_dance_e: tap_dance_e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_E";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp E>, <&kp LC(E)>;
+        };
+
+        tap_dance_f: tap_dance_f {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_F";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp F>, <&kp LC(F)>;
+        };
+
+        tap_dance_b: tap_dance_b {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_B";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp B>, <&kp LC(B)>;
+        };
+
+        tap_dance_y: tap_dance_y {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_Y";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp Y>, <&kp LC(Y)>;
+        };
+
+        tap_dance_o: tap_dance_o {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_O";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp O>, <&kp LC(O)>;
+        };
+
+        tap_dance_i: tap_dance_i {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_I";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp I>, <&kp LC(I)>;
+        };
+
+        tap_dance_z: tap_dance_z {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_Z";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp Z>, <&kp LC(Z)>;
+        };
+
+        tap_dance_x: tap_dance_x {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_X";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp X>, <&kp LC(X)>;
+        };
+
+        tap_dance_c: tap_dance_c {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_C";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp C>, <&kp LC(C)>;
+        };
+
+        tap_dance_v: tap_dance_v {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_V";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp V>, <&kp LC(V)>;
+        };
+
+        tap_dance_t: tap_dance_t {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_T";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp T>, <&kp LC(T)>;
+        };
+
+        tap_dance_w: tap_dance_w {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_W";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp W>, <&kp LC(W)>;
+        };
+
+        tap_dance_u: tap_dance_u {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_U";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp U>, <&kp LC(U)>;
+        };
+
+        tap_dance_d: tap_dance_d {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_D";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp D>, <&kp LC(D)>;
+        };
+
+        tap_dance_s: tap_dance_s {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_S";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp S>, <&kp LC(S)>;
+        };
+
+        tap_dance_slash: tap_dance_slash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_SLASH";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp SLASH>, <&kp LC(SLASH)>;
+        };
+
+        tap_dance_p: tap_dance_p {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_P";
+            #binding-cells = <0>;
+            tapping-term-ms = <30>;
+            bindings = <&kp P>, <&kp LC(P)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -121,10 +267,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q  &kp W  &kp E  &kp R             &kp T             &kp Y          &kp U      &kp I      &kp O    &kp P
-              &kp A  &kp S  &kp D  &kp F             &kp G             &kp H          &kp J      &kp K      &kp L    &kp SEMICOLON
-&kp LEFT_WIN  &kp Z  &kp X  &kp C  &kp V             &kp B             &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH       &kp RET
-                            &mo 1  &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp RIGHT_ALT  &kp SPACE  &mo 2
+              &kp Q         &tap_dance_w  &tap_dance_e  &kp R             &tap_dance_t      &tap_dance_y   &tap_dance_u  &tap_dance_i  &tap_dance_o  &tap_dance_p
+              &tap_dance_a  &tap_dance_s  &tap_dance_d  &tap_dance_f      &kp G             &kp H          &kp J         &kp K         &kp L         &kp SEMICOLON
+&kp LEFT_WIN  &tap_dance_z  &tap_dance_x  &tap_dance_c  &tap_dance_v      &tap_dance_b      &kp N          &kp M         &kp COMMA     &kp DOT       &tap_dance_slash  &kp RET
+                                          &mo 1         &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp RIGHT_ALT  &kp SPACE     &mo 2
             >;
         };
 
