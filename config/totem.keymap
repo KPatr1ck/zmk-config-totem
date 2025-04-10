@@ -145,6 +145,8 @@
             label = "TAP_DANCE_O";
             #binding-cells = <0>;
             bindings = <&kp O>, <&kp LC(O)>;
+
+            tapping-term-ms = <500>;
         };
 
         tap_dance_i: tap_dance_i {
@@ -152,6 +154,8 @@
             label = "TAP_DANCE_I";
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp LC(I)>;
+
+            tapping-term-ms = <500>;
         };
 
         tap_dance_z: tap_dance_z {
